@@ -133,10 +133,11 @@
     .topbar .status .hide{display:none}
     .grid,.kits{grid-template-columns:1fr}
   }
+  .fade{opacity:1}
   @media (prefers-reduced-motion:no-preference){
-    .fade{opacity:0; transform:translateY(14px); animation:rise .65s cubic-bezier(.2,.7,.2,1) forwards}
+    .fade{animation:rise .65s cubic-bezier(.2,.7,.2,1) both}
     .d1{animation-delay:.05s}.d2{animation-delay:.15s}.d3{animation-delay:.26s}.d4{animation-delay:.37s}
-    @keyframes rise{to{opacity:1; transform:none}}
+    @keyframes rise{from{opacity:0; transform:translateY(14px)} to{opacity:1; transform:none}}
   }
 </style>
 </head>
@@ -211,7 +212,7 @@
         <a class="work" href="https://adhd-override.netlify.app" target="_blank" rel="noopener">
           <div class="work-top"><span class="kind">Long-form · Book</span><span class="pill live">Live</span></div>
           <h3>ADHD Override</h3>
-          <p>A six-part, 28-section book on using AI to work with an ADHD brain — systems thinking applied to focus and execution. Written, structured, and edited end to end.</p>
+          <p>A six-part, 27-section book on using AI to work with an ADHD brain — systems thinking applied to focus and execution. Written, structured, and edited end to end.</p>
           <span class="go">Open ↗</span>
         </a>
 
